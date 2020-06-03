@@ -62,9 +62,9 @@ public class TestCode16_Revise extends ClassLoader {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		TestCode16_Revise testCode16 = new TestCode16_Revise("loder1"); //ÉèÖÃÎªnull£¬¸¸Àà¼ÓÔØÆ÷Îª¿Õ
-		//testCode16.setRootPath("D:\\develop\\CCXI\\DebugCodes\\bin\\");
-		testCode16.setRootPath("D:\\test\\");
+		TestCode16_Revise testCode16 = new TestCode16_Revise("loder1"); //ï¿½ï¿½ï¿½ï¿½Îªnullï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
+		//testCode16.setRootPath("D:\\github\\DebugCodes\\bin\\cn\\com\\ccxi\\test\\jvm\\");
+		testCode16.setRootPath("D:\\test\\jvm\\");
 		Class<?> clazz = testCode16.loadClass("cn.com.ccxi.test.jvm.TestCode01");
 		System.out.println(clazz + "@@" + clazz.hashCode());
 		System.out.println(clazz.getClassLoader());
@@ -76,12 +76,12 @@ public class TestCode16_Revise extends ClassLoader {
 		
 		System.out.println("=====================================================");
 		TestCode16_Revise testCode1601 = new TestCode16_Revise("loder2");
-		testCode1601.setRootPath("D:\\test\\");
+		//testCode1601.setRootPath("D:\\github\\DebugCodes\\bin\\cn\\com\\ccxi\\test\\jvm\\");
+		testCode1601.setRootPath("D:\\test\\jvm\\");
 		Class<?> clazz1 = testCode1601.loadClass("cn.com.ccxi.test.jvm.TestCode01");
 		System.out.println(clazz1 + "@@" + clazz1.hashCode());
 		System.out.println(clazz1.getClassLoader());
 		System.out.println(clazz1.newInstance());
-		System.gc();
 		
 //		System.out.println("=====================================================");
 //		TestCode16_Revise testCode1602 = new TestCode16_Revise("loder3", testCode16);
