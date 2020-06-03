@@ -8,7 +8,7 @@ public class TestCode17_1 {
         Class<?> clazz = loader1.loadClass("cn.com.ccxi.test.jvm.MySample");
         
         /**
-         * 1、在 D:\\test\\jvm\\ 拷贝 MySample 和 MyCat 的class文件，并删除环境变量中，原始的 MySample 和 MyCat 的class文件
+         * 1、在 D:\\test\\jvm\\ 拷贝 MySample 和 MyCat 的class文件，并删除环境变量中，原始的 MySample 和 MyCat 的class文件  
          * 打印结果是，加载的两个类都会使用自定义的类加载器 TestCode16_Revise
          * ------------------------------------------------------------------------
          * ==>自定义的类加载器被执行<==
