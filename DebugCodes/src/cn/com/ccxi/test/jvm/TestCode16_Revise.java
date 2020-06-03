@@ -29,6 +29,7 @@ public class TestCode16_Revise extends ClassLoader {
 
 	@Override
 	protected Class<?> findClass(String className) throws ClassNotFoundException {
+	    System.out.println("---自定义的累加器被执行-----");
 		byte[] bytes = loadClassData(className);
 		return defineClass(className, bytes, 0, bytes.length);
 	}
