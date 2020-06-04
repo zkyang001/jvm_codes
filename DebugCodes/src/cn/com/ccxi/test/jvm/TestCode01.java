@@ -5,7 +5,7 @@ package cn.com.ccxi.test.jvm;
  * iconst_1 将整型 1 推送至栈顶（1-5）
  * bipush 将-128到127之间的短整型数字推送至栈顶
  * sipush 将（-32768~32767）之间的数字推送至栈顶
- * 此处涉及 常量传播优化
+ * 此处涉及 常量传播优化  
  */
 public class TestCode01 {
 	public static void main(String[] args) {
