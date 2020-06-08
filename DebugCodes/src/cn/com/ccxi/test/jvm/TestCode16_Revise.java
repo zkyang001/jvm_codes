@@ -13,6 +13,14 @@ public class TestCode16_Revise extends ClassLoader {
 	
 	private final String SUFFIX = ".class";
 	
+	/**
+	 * 这个是在TestCode23中为了测试 java.system.class.loader 参数而添加的
+	 * @param classLoader
+	 */
+	public TestCode16_Revise(ClassLoader classLoader) {
+	    super(classLoader);
+    }
+	
 	public TestCode16_Revise(String classLoaderName) {
 		super();
 		this.classLoaderName = classLoaderName;

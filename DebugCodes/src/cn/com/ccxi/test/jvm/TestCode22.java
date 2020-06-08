@@ -14,6 +14,7 @@ public class TestCode22 {
     }
 
     /**
+     * 
      * 测试1：在 cmd中启动， 命令修改为 java -Djava.ext.dirs=./ cn.com.ccxi.test.jvm.TestCode22
      * 加载器是AppClassLoader是因为，扩展类加载器无法直接加载class文件
      * ------------------------------------------------------------------------------------------------------
