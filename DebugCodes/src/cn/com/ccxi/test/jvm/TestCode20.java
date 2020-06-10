@@ -16,7 +16,7 @@ public class TestCode20 {
         Class<?> clazz2 = loader2.loadClass("cn.com.ccxi.test.jvm.MyPerson");
         /**
          * 没有指定自定义类加载器的加载路径，所有clazz1和clazz2的类加载器都是AppClassLoader
-         * 在clazz1被成功加载之后，就会存放到方法区中，并生成MyPerson的类对象，
+         * 在clazz1被成功加载之后，就会存放到方法区中，并生成MyPerson的类对象， 
          * clazz2被加载时，不会重复进行加载动作，而是将方法区中的MyPerson类对象直接返回
          * 结果为 True
          */

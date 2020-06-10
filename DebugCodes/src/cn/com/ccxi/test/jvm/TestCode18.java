@@ -17,7 +17,7 @@ public class TestCode18 {
          * C:\software\java7\jdk\jre\lib\jce.jar;
          * C:\software\java7\jdk\jre\lib\charsets.jar;
          * C:\software\java7\jdk\jre\lib\jfr.jar;
-         * C:\software\java7\jdk\jre\classes
+         * C:\software\java7\jdk\jre\classes 
          */
         System.out.println(System.getProperty("sun.boot.class.path"));
         
