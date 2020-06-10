@@ -2,6 +2,10 @@ package cn.com.ccxi.test.jvm;
 
 import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
+import sun.misc.Launcher;
+
 /**
  * 1、在java运行期间，一个类的唯一性是由类本身（binary name）和加载该类的定义类加载器共同确定的（class loader）
  * 如果一个类由两个不同的类加载器加载，即便是类的加载路径相同，他们在虚拟机中也属于两个不同的类。即便.class相同，并且从相同的位置加载也是如此。
@@ -24,7 +28,7 @@ public class TestCode23 {
          *  a:启动类加载器是虚拟机中内置的机器码，即由C++编写的，在JVM启动时，负责加载ClassLoader类和其他平台相关的Java类
          *    作为类加载器的入口，它也会加载扩展类加载器和系统类加载器
          *  b:启动类加载器不是Java类，其他加载器是java类
-         *    自动类加载器是特定于平台的机器指令，负责开启类加载的过程
+         *    启动类加载器是特定于平台的机器指令，负责开启类加载的过程
          *  c:启动类加载器除了负责加载各种Java类的加载器之外，还负责加载与jre运行相关的各种基本组件，以及与虚拟机自身运行相关的各种依赖包。
          */
         System.out.println(System.getProperty("sun.boot.class.path"));
@@ -36,7 +40,12 @@ public class TestCode23 {
          * 系统类加载器
          */
         System.out.println(System.getProperty("java.class.path"));
+        /**
+         * 类加载器类的加载器
+         */
+        System.out.println(ClassLoader.class.getClassLoader());//启动类加载器null
         
+        System.out.println(Launcher.class.getClassLoader());//启动类加载器null
         /**
          * 间隔符
          */
@@ -72,7 +81,12 @@ public class TestCode23 {
         
         System.out.println(TestCode23.class.getClassLoader());
         
+        
         System.out.println(ClassLoader.getSystemClassLoader());
+        
+        String.valueOf(true);
+        	
+        
     }
 
 }
