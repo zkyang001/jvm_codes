@@ -23,14 +23,14 @@ public class TestCode21 {
      * clazz1 == clazz2 为false，因为两者是由自定义的类加载器loader1和loader2加载，命名空间不同，两个类不可见，所以不想等。
      * method.invoke(object1, object2); 会报错，报错代码  this.myPerson = (MyPerson)myPerson;
      * 因为两者的命名空间不同，所以互相不可见，在方法区中是两个不同的Class对象，所以类型强制转换的时候会报错。
-     * ----------------------------------------------------------------------------------------------------------
+     * ----------------------------------------------------------------------------------------------------------1
      * ==>自定义的类加载器被执行<==
      * ==>自定义的类加载器被执行<==
      * false
      * Exception in thread "main" java.lang.reflect.InvocationTargetException
      * ....
      * Caused by: java.lang.ClassCastException: cn.com.ccxi.test.jvm.MyPerson cannot be cast to cn.com.ccxi.test.jvm.MyPerson
-     * ---------------------------------------------------------------------------------------------------------- 
+     * ---------------------------------------------------------------------------------------------------------- 2
      * @param args
      * @throws Exception
      */
