@@ -11,7 +11,7 @@ public class TestCode24 {
      *   setContextClassLoader(cl)：设置线程上下文类加载器
      *   
      *   如果没有设置线程的上下文类加载，线程会默认继承其父类的线程上下文类加载。
-     *   Java初始运行的线程的上下文类加载器是AppClassLoader，线程的运行的代码可以通过该类加载
+     *   Java初始运行的线程的上下文类加载器是AppClassLoader，线程的运行的代码可以通过该类加载器加载
      *   
      * 3、线程上下文类加载器出现的原因及优势
      *  原因：在SPI(Service Provider Interfade，即服务提供接口)中，比如jdbc，jdk提供了具体规范的接口，由数据库厂商去实现。
