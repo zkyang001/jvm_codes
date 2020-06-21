@@ -22,10 +22,9 @@ public class TestCode26 {
     
     
     /**
-     * class：class sun.jdbc.odbc.JdbcOdbcDriver，loader：null
-     * class：class com.mysql.jdbc.Driver，loader：sun.misc.Launcher$AppClassLoader@1978b0f9
-     * 当前线程上下文类加载器：sun.misc.Launcher$AppClassLoader@1978b0f9
      * ServiceLoader的类加载器：null
+     * ServiceLoader --> 服务加载器
+     * 源码分析
      * @param args
      */
     public static void main(String[] args) {
