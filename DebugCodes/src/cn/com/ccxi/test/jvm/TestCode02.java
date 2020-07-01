@@ -5,17 +5,15 @@ public class TestCode02 {
 		System.out.println(Child.n);
 	}
 }
-
 class Parent {
-	public static String a = "hello";
+	public static String a = "parent str ==";
 	static {
-		System.out.println("parent");
+		System.out.println("parent init");
 	}
 }
 class Child extends Parent {
-	public static String n = "hello";
+	public static String n = "child str ==";
 	static {
-		System.out.println("child");
+		System.out.println("child init");
 	}
-	
 }

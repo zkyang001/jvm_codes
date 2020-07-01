@@ -17,8 +17,9 @@ package cn.com.ccxi.test.jvm;
  */
 public class TestCode06 {
 	public static void main(String[] args) {
-		System.out.println("a : " + MyParent06.a);//1
-		System.out.println("b : " + MyParent06.b);//0
+	    MyParent06 instance = MyParent06.getInstance();
+		System.out.println("a : " + instance.a);//1
+		System.out.println("b : " + instance.b);//0
 	}
 }
 

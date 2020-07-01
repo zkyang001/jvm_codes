@@ -9,15 +9,11 @@ package cn.com.ccxi.test.jvm;
  */
 public class TestCode01 {
 	public static void main(String[] args) {
-		System.out.println(Poo.b);
+		System.out.println(Poo.a);
 	}
 }
-
 class Poo {
 	public static final String a = "hello";
-	
-	public static final float b = 5.2767F;
-	
 	
 	static {
 		System.out.println("¾²Ì¬´úÂë¿é");
