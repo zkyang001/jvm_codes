@@ -1,7 +1,5 @@
 package cn.com.ccxi.test.jvm;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Random;
 
 /**
