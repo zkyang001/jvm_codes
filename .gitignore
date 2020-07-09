@@ -3,3 +3,6 @@
 /DebugCodes/bin
 ./DebugCodes.zip
 ./DebugCodes/.classpath
+/ProxyCodes/bin/*
+/ProxyCodes/bin
+./ProxyCodes/.classpath
