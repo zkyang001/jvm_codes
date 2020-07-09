@@ -1,7 +1,0 @@
-*.class
-/DebugCodes/bin/*
-/DebugCodes/bin
-./DebugCodes.zip
-./DebugCodes/.classpath
-/ProxyCodes/bin/*
-/ProxyCodes/bin
