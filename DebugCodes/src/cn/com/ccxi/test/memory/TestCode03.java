@@ -17,7 +17,6 @@ class A {
 		B.method();
 	}
 }
-
 class B {
 	public static synchronized void method() {
 		System.out.println(" class B method .");
