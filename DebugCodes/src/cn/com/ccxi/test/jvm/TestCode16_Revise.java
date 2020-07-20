@@ -72,7 +72,7 @@ public class TestCode16_Revise extends ClassLoader {
 	
 	public static void main(String[] args) throws Exception {
 		TestCode16_Revise testCode16 = new TestCode16_Revise("loder1"); //����Ϊnull�����������Ϊ��
-		//testCode16.setRootPath("D:\\github\\DebugCodes\\bin\\cn\\com\\ccxi\\test\\jvm\\");
+		testCode16.setRootPath("D:\\github\\DebugCodes\\bin\\cn\\com\\ccxi\\test\\jvm\\");
 		testCode16.setRootPath("D:\\test\\jvm\\");
 		Class<?> clazz = testCode16.loadClass("cn.com.ccxi.test.jvm.TestCode01");
 		System.out.println(clazz + "@@" + clazz.hashCode());

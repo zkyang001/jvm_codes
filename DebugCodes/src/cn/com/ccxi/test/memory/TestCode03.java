@@ -2,8 +2,8 @@ package cn.com.ccxi.test.memory;
 
 public class TestCode03 {
 	public static void main(String[] args) {
-		new Thread(() -> A.method(),  "thread-A").start();
-		new Thread(() -> B.method(),  "thread-B").start();
+//		new Thread(() -> A.method(),  "thread-A").start();
+//		new Thread(() -> B.method(),  "thread-B").start();
 	}
 }
 class A {
