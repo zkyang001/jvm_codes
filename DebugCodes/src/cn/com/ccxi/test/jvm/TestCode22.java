@@ -1,8 +1,8 @@
 package cn.com.ccxi.test.jvm;
 
 /**
- * ¸ÃÀàÓÃÓÚ²âÊÔÀ©Õ¹Àà¼ÓÔØÆ÷µÄ¼ÓÔØÂ·¾¶
- * À©Õ¹Àà¼ÓÔØÆ÷ÎÞ·¨Ö±½Ó¼ÓÔØ.classÎÄ¼þ£¬Ö»ÄÜ¼ÓÔØjar°üÖÐµÄclassÎÄ¼þ
+ * è¯¥ç±»ç”¨äºŽæµ‹è¯•æ‰©å±•ç±»åŠ è½½å™¨çš„åŠ è½½è·¯å¾„
+ * æ‰©å±•ç±»åŠ è½½å™¨æ— æ³•ç›´æŽ¥åŠ è½½.classæ–‡ä»¶ï¼Œåªèƒ½åŠ è½½jaråŒ…ä¸­çš„classæ–‡ä»¶
  * 
  * @author 86135
  *
@@ -15,20 +15,20 @@ public class TestCode22 {
 
     /**
      * 
-     * ²âÊÔ1£ºÔÚ cmdÖÐÆô¶¯£¬ ÃüÁîÐÞ¸ÄÎª java -Djava.ext.dirs=./ cn.com.ccxi.test.jvm.TestCode22
-     * ¼ÓÔØÆ÷ÊÇAppClassLoaderÊÇÒòÎª£¬À©Õ¹Àà¼ÓÔØÆ÷ÎÞ·¨Ö±½Ó¼ÓÔØclassÎÄ¼þ
+     * æµ‹è¯•1ï¼šåœ¨ cmdä¸­å¯åŠ¨ï¼Œ å‘½ä»¤ä¿®æ”¹ä¸º java -Djava.ext.dirs=./ cn.com.ccxi.test.jvm.TestCode22
+     * åŠ è½½å™¨æ˜¯AppClassLoaderæ˜¯å› ä¸ºï¼Œæ‰©å±•ç±»åŠ è½½å™¨æ— æ³•ç›´æŽ¥åŠ è½½classæ–‡ä»¶
      * ------------------------------------------------------------------------------------------------------1
      * TestCode22 inited!
      * sun.misc.Launcher$AppClassLoader@6276e1db
      * sun.misc.Launcher$AppClassLoader@6276e1db
      * ------------------------------------------------------------------------------------------------------1
      * 
-     * ²âÊÔ2£º½«TestCode01´ò°ü³Éjar°ü£º jar cvf testjvm.jar ./cn/com/ccxi/test/jvm/TestCode01.class
-     * ÔÚ cmdÖÐÆô¶¯£¬ ÃüÁîÐÞ¸ÄÎª java -Djava.ext.dirs=./ cn.com.ccxi.test.jvm.TestCode22
+     * æµ‹è¯•2ï¼šå°†TestCode01æ‰“åŒ…æˆjaråŒ…ï¼š jar cvf testjvm.jar ./cn/com/ccxi/test/jvm/TestCode01.class
+     * åœ¨ cmdä¸­å¯åŠ¨ï¼Œ å‘½ä»¤ä¿®æ”¹ä¸º java -Djava.ext.dirs=./ cn.com.ccxi.test.jvm.TestCode22
      * ------------------------------------------------------------------------------------------------------2
      * TestCode22 inited!
      * sun.misc.Launcher$AppClassLoader@302b2c81
-     * sun.misc.Launcher$ExtClassLoader@6276e1db -->AppClassLoaderÎ¯ÍÐ¸ø¸¸ÀàExtClassLoader¼ÓÔØÆ÷È¥¼ÓÔØ¸ÃÀà
+     * sun.misc.Launcher$ExtClassLoader@6276e1db -->AppClassLoaderå§”æ‰˜ç»™çˆ¶ç±»ExtClassLoaderåŠ è½½å™¨åŽ»åŠ è½½è¯¥ç±»
      * ------------------------------------------------------------------------------------------------------2
      * 
      * @param args

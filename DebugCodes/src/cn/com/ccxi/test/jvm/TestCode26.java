@@ -6,14 +6,14 @@ import java.util.ServiceLoader;
 
 
 /**
- * 1¡¢Ïß³ÌÉÏÏÂÎÄÀà¼ÓÔØÆ÷µÄÊ¹ÓÃÄ£Ê½£º»ñÈ¡->Ê¹ÓÃ->»¹Ô­
- * »ñÈ¡£ºClassLoader classLoader = Thread.currentThread().getContextClassLoader();
- * Ê¹ÓÃ£ºThread.currentThread().setContextClassLoader(newClassLoader);
- *     method() Ê¹ÓÃÉÏÏÂÎÄÀà¼ÓÔØÆ÷´¦ÀíÒ»Ğ©ÊÂÇé.
- * »¹Ô­:Thread.currentThread().setContextClassLoader(classLoader)
+ * 1ã€çº¿ç¨‹ä¸Šä¸‹æ–‡ç±»åŠ è½½å™¨çš„ä½¿ç”¨æ¨¡å¼ï¼šè·å–->ä½¿ç”¨->è¿˜åŸ
+ * è·å–ï¼šClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+ * ä½¿ç”¨ï¼šThread.currentThread().setContextClassLoader(newClassLoader);
+ *     method() ä½¿ç”¨ä¸Šä¸‹æ–‡ç±»åŠ è½½å™¨å¤„ç†ä¸€äº›äº‹æƒ….
+ * è¿˜åŸ:Thread.currentThread().setContextClassLoader(classLoader)
  * -----------------------------------------------------------------------------------1
- * 2¡¢Ïß³ÌÉÏÏÂÎÄÀà¼ÓÔØÆ÷ÆÆ»µÁËË«Ç×Î¯ÍĞÄ£ĞÍ»úÖÆ
- * 	 µ±¸ß²ãÌá¹©ÁË½Ó¿ÚÓÉµÍ²ãÈ¥ÊµÏÖ£¬Í¬Ê±¸ß²ãµÄÀàĞèÒª·ÃÎÊµÍ²ãÀàÊ±£¬¾Í±ØĞëÊ¹ÓÃÏß³ÌÉÏÏÂÎÄÀà¼ÓÔØÆ÷À´°ïÖú¸ß²ãÀàÈ¥·ÃÎÊµÍ²ãÀà¡£
+ * 2ã€çº¿ç¨‹ä¸Šä¸‹æ–‡ç±»åŠ è½½å™¨ç ´åäº†åŒäº²å§”æ‰˜æ¨¡å‹æœºåˆ¶
+ *   å½“é«˜å±‚æä¾›äº†æ¥å£ç”±ä½å±‚å»å®ç°ï¼ŒåŒæ—¶é«˜å±‚çš„ç±»éœ€è¦è®¿é—®ä½å±‚ç±»æ—¶ï¼Œå°±å¿…é¡»ä½¿ç”¨çº¿ç¨‹ä¸Šä¸‹æ–‡ç±»åŠ è½½å™¨æ¥å¸®åŠ©é«˜å±‚ç±»å»è®¿é—®ä½å±‚ç±»ã€‚
  * 
  * 
  *
@@ -22,9 +22,9 @@ public class TestCode26 {
     
     
     /**
-     * ServiceLoaderµÄÀà¼ÓÔØÆ÷£ºnull
-     * ServiceLoader --> ·şÎñ¼ÓÔØÆ÷
-     * Ô´Âë·ÖÎö
+     * ServiceLoaderçš„ç±»åŠ è½½å™¨ï¼šnull
+     * ServiceLoader --> æœåŠ¡åŠ è½½å™¨
+     * æºç åˆ†æ
      * @param args
      */
     public static void main(String[] args) {
@@ -33,11 +33,11 @@ public class TestCode26 {
         Iterator<Driver> iterator = loader.iterator();
         while(iterator.hasNext()) {
             Driver next = iterator.next();
-            System.out.println("class£º" + next.getClass() + "£¬loader£º" + next.getClass().getClassLoader());
+            System.out.println("classï¼š" + next.getClass() + "ï¼Œloaderï¼š" + next.getClass().getClassLoader());
         }
         
-        System.out.println("µ±Ç°Ïß³ÌÉÏÏÂÎÄÀà¼ÓÔØÆ÷£º" + Thread.currentThread().getContextClassLoader());
-        System.out.println("ServiceLoaderµÄÀà¼ÓÔØÆ÷£º" + ServiceLoader.class.getClassLoader());
+        System.out.println("å½“å‰çº¿ç¨‹ä¸Šä¸‹æ–‡ç±»åŠ è½½å™¨ï¼š" + Thread.currentThread().getContextClassLoader());
+        System.out.println("ServiceLoaderçš„ç±»åŠ è½½å™¨ï¼š" + ServiceLoader.class.getClassLoader());
         
     }
 
