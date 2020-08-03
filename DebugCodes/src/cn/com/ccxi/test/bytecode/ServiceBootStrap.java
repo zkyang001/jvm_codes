@@ -5,16 +5,16 @@ import java.lang.reflect.Proxy;
 import java.util.Objects;
 
 public class ServiceBootStrap {
-	public static void main(String[] args) {
-		// ÉèÖÃÒÔÏÂ²ÎÊı£¬¿ÉÒÔÔÚ±¾µØ´ÅÅÌÉú³É com.sun.proxy.$Proxy0 µÄ×Ö½ÚÂëÎÄ¼ş£¬
-		// Èç¹û²»ÉèÖÃ»òÕßÎªfalse£¬Ôò²»»áÉú³É£¬Ö»»á´æÔÚÄÚ´æÖĞ¡£
-		System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
-		ServiceInterface sInterface = Objects.requireNonNull(new ServiceImpl());
-		InvocationHandler ih = new MyInvocationHandler(sInterface);
-		ServiceInterface proxy = (ServiceInterface)Proxy.newProxyInstance(sInterface.getClass().getClassLoader(), 
-				sInterface.getClass().getInterfaces(), ih);
-		proxy.print();
-		System.out.println(proxy.getClass()); // class com.sun.proxy.$Proxy0
-		System.out.println(proxy.getClass().getSuperclass());// class java.lang.reflect.Proxy
-	}
+    public static void main(String[] args) {
+        // è®¾ç½®ä»¥ä¸‹å‚æ•°ï¼Œå¯ä»¥åœ¨æœ¬åœ°ç£ç›˜ç”Ÿæˆ com.sun.proxy.$Proxy0 çš„å­—èŠ‚ç æ–‡ä»¶ï¼Œ
+        // å¦‚æœä¸è®¾ç½®æˆ–è€…ä¸ºfalseï¼Œåˆ™ä¸ä¼šç”Ÿæˆï¼Œåªä¼šå­˜åœ¨å†…å­˜ä¸­ã€‚
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        ServiceInterface sInterface = Objects.requireNonNull(new ServiceImpl());
+        InvocationHandler ih = new MyInvocationHandler(sInterface);
+        ServiceInterface proxy = (ServiceInterface)Proxy.newProxyInstance(sInterface.getClass().getClassLoader(), 
+                sInterface.getClass().getInterfaces(), ih);
+        proxy.print();
+        System.out.println(proxy.getClass()); // class com.sun.proxy.$Proxy0
+        System.out.println(proxy.getClass().getSuperclass());// class java.lang.reflect.Proxy
+    }
 }

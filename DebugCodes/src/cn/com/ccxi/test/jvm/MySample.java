@@ -6,8 +6,8 @@ public class MySample {
         System.out.println(getClass().getClassLoader());
         new MyCat();
         
-        // ÎªÁËÑéÖ¤ÃüÃû¿Õ¼ä5µÄÎÊÌâ£¬ÆäËû1-4¿É×¢ÊÍµô
-        System.out.println("MyCat£º" + MyCat.class);
+        // ä¸ºäº†éªŒè¯å‘½åç©ºé—´5çš„é—®é¢˜ï¼Œå…¶ä»–1-4å¯æ³¨é‡Šæ‰
+        System.out.println("MyCatï¼š" + MyCat.class);
     }
 
 }

@@ -1,51 +1,51 @@
 package cn.com.ccxi.test.jvm;
 
 /**
- * 1¡¢ÔÚ´´½¨Êı×éÊµÀıµÄÊ±ºò£¬²¢²»»áÒıÆğÆäÔªËØÀàĞÍµÄ³õÊ¼»¯
- * 	´´½¨Êı×éÊµÀıµÄÊ±ºò£¬ĞéÄâ»ú»áÒşÊ½µÄ´´½¨Ò»¸ö[cn.com.ccxi.test.jvm.Parent04µÄÀà£¬
- * 	Èç¹ûÊÇ¶àÎ¬¶ÈÊı×é£¬»á´´½¨[[cn.com.ccxi.test.jvm.Parent04µÄÀà
- * 	¶ÔÓÚÊı×é£¬ĞéÄâ»ú´´½¨µÄÊı×éÀàĞÍµÄ¸¸Àà¶¼ÊÇjava.lang.ObjectÀà
- * 	Êı×éµÄ×é¼şÖ¸µÄÊÇ£¬Êı×éÔÚÈ¥µôÒ»¸öÎ¬¶ÈºóµÄÀàĞÍ
+ * 1ã€åœ¨åˆ›å»ºæ•°ç»„å®ä¾‹çš„æ—¶å€™ï¼Œå¹¶ä¸ä¼šå¼•èµ·å…¶å…ƒç´ ç±»å‹çš„åˆå§‹åŒ–
+ *  åˆ›å»ºæ•°ç»„å®ä¾‹çš„æ—¶å€™ï¼Œè™šæ‹Ÿæœºä¼šéšå¼çš„åˆ›å»ºä¸€ä¸ª[cn.com.ccxi.test.jvm.Parent04çš„ç±»ï¼Œ
+ *  å¦‚æœæ˜¯å¤šç»´åº¦æ•°ç»„ï¼Œä¼šåˆ›å»º[[cn.com.ccxi.test.jvm.Parent04çš„ç±»
+ *  å¯¹äºæ•°ç»„ï¼Œè™šæ‹Ÿæœºåˆ›å»ºçš„æ•°ç»„ç±»å‹çš„çˆ¶ç±»éƒ½æ˜¯java.lang.Objectç±»
+ *  æ•°ç»„çš„ç»„ä»¶æŒ‡çš„æ˜¯ï¼Œæ•°ç»„åœ¨å»æ‰ä¸€ä¸ªç»´åº¦åçš„ç±»å‹
  * 
- * --anewarray--´´½¨Ò»¸öÒıÓÃÀàĞÍµÄÊı×é£¬²¢½«ÆäÑ¹ÈëÕ»¶¥
- * --newarray---´´½¨Ò»¸öÔ­Ê¼ÀàĞÍ(int, shor, byte)µÄÊı×é£¬²¢½«ÆäÑ¹ÈëÕ»¶¥
- * --multianewarray--- ´´½¨Ò»¸ö¶àÎ¬¶ÈµÄÊı×é£¬²¢½«ÆäÑ¹ÈëÕ»¶¥
+ * --anewarray--åˆ›å»ºä¸€ä¸ªå¼•ç”¨ç±»å‹çš„æ•°ç»„ï¼Œå¹¶å°†å…¶å‹å…¥æ ˆé¡¶
+ * --newarray---åˆ›å»ºä¸€ä¸ªåŸå§‹ç±»å‹(int, shor, byte)çš„æ•°ç»„ï¼Œå¹¶å°†å…¶å‹å…¥æ ˆé¡¶
+ * --multianewarray--- åˆ›å»ºä¸€ä¸ªå¤šç»´åº¦çš„æ•°ç»„ï¼Œå¹¶å°†å…¶å‹å…¥æ ˆé¡¶
  * @author yang_zk
  *
  */
 public class TestCode04 {
 
-	public static void main(String[] args) {
-		Parent04 p1 = new Parent04(); // --³õÊ¼»¯
-		Parent04[] ps = new Parent04[23]; // ²»»áÒıÆğParent04ÀàµÄ³õÊ¼»¯
-		Parent04[][] pss = new Parent04[3][4];// ²»»áÒıÆğParent04µÄ³õÊ¼»¯
-		System.out.println(ps.getClass()); // class [Lcn.com.ccxi.test.jvm.Parent04
-		System.out.println(ps.getClass().getSuperclass()); // class java.lang.Object
-		System.out.println(ps.getClass().getSuperclass().getSuperclass()); // null
-		System.out.println(pss.getClass()); // class [[Lcn.com.ccxi.test.jvm.Parent04;
-		System.out.println(pss.getClass().getSuperclass());// class java.lang.Object
-		
-		int[] a = new int[4];
-		System.out.println(a.getClass()); // class [I
-		Integer[] aa = new Integer[4];
-		System.out.println(aa.getClass()); // class [Ljava.lang.Integer;
-		
-		byte[] b = new byte[3];
-		System.out.println(b.getClass()); // class [B
-		Byte[] bb = new Byte[3];
-		System.out.println(bb.getClass()); // class [Ljava.lang.Byte;
-		
-		int[][] t1 = new int[2][2]; // multianewarray
-		int[][][] t2 = new int[2][2][4]; // multianewarray
-		
-	}
+    public static void main(String[] args) {
+        Parent04 p1 = new Parent04(); // --åˆå§‹åŒ–
+        Parent04[] ps = new Parent04[23]; // ä¸ä¼šå¼•èµ·Parent04ç±»çš„åˆå§‹åŒ–
+        Parent04[][] pss = new Parent04[3][4];// ä¸ä¼šå¼•èµ·Parent04çš„åˆå§‹åŒ–
+        System.out.println(ps.getClass()); // class [Lcn.com.ccxi.test.jvm.Parent04
+        System.out.println(ps.getClass().getSuperclass()); // class java.lang.Object
+        System.out.println(ps.getClass().getSuperclass().getSuperclass()); // null
+        System.out.println(pss.getClass()); // class [[Lcn.com.ccxi.test.jvm.Parent04;
+        System.out.println(pss.getClass().getSuperclass());// class java.lang.Object
+        
+        int[] a = new int[4];
+        System.out.println(a.getClass()); // class [I
+        Integer[] aa = new Integer[4];
+        System.out.println(aa.getClass()); // class [Ljava.lang.Integer;
+        
+        byte[] b = new byte[3];
+        System.out.println(b.getClass()); // class [B
+        Byte[] bb = new Byte[3];
+        System.out.println(bb.getClass()); // class [Ljava.lang.Byte;
+        
+        int[][] t1 = new int[2][2]; // multianewarray
+        int[][][] t2 = new int[2][2][4]; // multianewarray
+        
+    }
 }
 
 
 class Parent04 {
-	
-	static {
-		System.out.println("---Parent04----³õÊ¼»¯");
-	}
-	
+    
+    static {
+        System.out.println("---Parent04----åˆå§‹åŒ–");
+    }
+    
 }

@@ -3,20 +3,20 @@ package cn.com.ccxi.test.jvm;
 import java.util.UUID;
 
 /**
- * ¶ÔÓÚÔÚ±àÒëÆÚ¼äÎŞ·¨È·¶¨ÖµµÃ³£Á¿£¬javaĞéÄâ»ú»áÔÚÔËĞĞÆÚ¼äÈ·¶¨³£Á¿µÄÖµ¡£
- * ¶ÔÓÚµ÷ÓÃ³£Á¿µÄÀà£¬Ôò»áÔÚÔËĞĞÆÚ¼ä£¬Ö÷¶¯µÄÈ¥µ÷ÓÃ¶¨ÒåÀà£¨Parent03£©µÄ³£Á¿£¬Òò´Ë»áÒıÆğ¶¨ÒåÀàµÄ³õÊ¼»¯
- * ¸öÈËÀí½â£¬´ËÊ±µÄÖ÷¶¯µ÷ÓÃ¿ÉÒÔÈÏÎª´Ë³£Á¿±¾ÉíÒ²ÊÇstatic£¬¼´¾²Ì¬µÄ£¬»áÒıÆğ´ËÀàµÄ³õÊ¼»¯
+ * å¯¹äºåœ¨ç¼–è¯‘æœŸé—´æ— æ³•ç¡®å®šå€¼å¾—å¸¸é‡ï¼Œjavaè™šæ‹Ÿæœºä¼šåœ¨è¿è¡ŒæœŸé—´ç¡®å®šå¸¸é‡çš„å€¼ã€‚
+ * å¯¹äºè°ƒç”¨å¸¸é‡çš„ç±»ï¼Œåˆ™ä¼šåœ¨è¿è¡ŒæœŸé—´ï¼Œä¸»åŠ¨çš„å»è°ƒç”¨å®šä¹‰ç±»ï¼ˆParent03ï¼‰çš„å¸¸é‡ï¼Œå› æ­¤ä¼šå¼•èµ·å®šä¹‰ç±»çš„åˆå§‹åŒ–
+ * ä¸ªäººç†è§£ï¼Œæ­¤æ—¶çš„ä¸»åŠ¨è°ƒç”¨å¯ä»¥è®¤ä¸ºæ­¤å¸¸é‡æœ¬èº«ä¹Ÿæ˜¯staticï¼Œå³é™æ€çš„ï¼Œä¼šå¼•èµ·æ­¤ç±»çš„åˆå§‹åŒ–
  * @author yang_zk
  *
  */
 public class TestCode03 {
-	public static void main(String[] args) {
-		System.out.println(Parent03.constant);
-	}
+    public static void main(String[] args) {
+        System.out.println(Parent03.constant);
+    }
 }
 class Parent03 {
-	public static final String constant = UUID.randomUUID().toString();
-	static {
-		System.out.println("parent03 is inited");
-	}
+    public static final String constant = UUID.randomUUID().toString();
+    static {
+        System.out.println("parent03 is inited");
+    }
 }

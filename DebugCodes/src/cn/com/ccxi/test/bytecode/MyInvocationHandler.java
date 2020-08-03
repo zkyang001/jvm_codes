@@ -4,15 +4,15 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 public class MyInvocationHandler implements InvocationHandler {
-	private ServiceInterface obj;
-	public MyInvocationHandler(ServiceInterface obj) {
-		this.obj = obj;
-	};
-	@Override
-	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		System.out.println("Ç°ÖÃ¹¦ÄÜÔöÇ¿¡£¡£¡£");
-		Object invoke = method.invoke(obj, args);;
-		System.out.println("ºóÖÃ¹¦ÄÜÔöÇ¿¡£¡£¡£");
-		return invoke;
-	}
+    private ServiceInterface obj;
+    public MyInvocationHandler(ServiceInterface obj) {
+        this.obj = obj;
+    };
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("å‰ç½®åŠŸèƒ½å¢å¼ºã€‚ã€‚ã€‚");
+        Object invoke = method.invoke(obj, args);;
+        System.out.println("åç½®åŠŸèƒ½å¢å¼ºã€‚ã€‚ã€‚");
+        return invoke;
+    }
 }

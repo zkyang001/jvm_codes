@@ -1,21 +1,21 @@
 package cn.com.ccxi.test.jvm;
 
 /**
- * ldc:½«String£¬int£¬floatÀàĞÍµÄ³£Á¿´Ó³£Á¿³ØÖĞÍÆËÍÖÁÕ»¶¥
- * iconst_1 ½«ÕûĞÍ 1 ÍÆËÍÖÁÕ»¶¥£¨1-5£©
- * bipush ½«-128µ½127Ö®¼äµÄ¶ÌÕûĞÍÊı×ÖÍÆËÍÖÁÕ»¶¥
- * sipush ½«£¨-32768~32767£©Ö®¼äµÄÊı×ÖÍÆËÍÖÁÕ»¶¥
- * ´Ë´¦Éæ¼° ³£Á¿´«²¥ÓÅ»¯  
+ * ldc:å°†Stringï¼Œintï¼Œfloatç±»å‹çš„å¸¸é‡ä»å¸¸é‡æ± ä¸­æ¨é€è‡³æ ˆé¡¶
+ * iconst_1 å°†æ•´å‹ 1 æ¨é€è‡³æ ˆé¡¶ï¼ˆ1-5ï¼‰
+ * bipush å°†-128åˆ°127ä¹‹é—´çš„çŸ­æ•´å‹æ•°å­—æ¨é€è‡³æ ˆé¡¶
+ * sipush å°†ï¼ˆ-32768~32767ï¼‰ä¹‹é—´çš„æ•°å­—æ¨é€è‡³æ ˆé¡¶
+ * æ­¤å¤„æ¶‰åŠ å¸¸é‡ä¼ æ’­ä¼˜åŒ–  
  */
 public class TestCode01 {
-	public static void main(String[] args) {
-		System.out.println(Poo.a);
-	}
+    public static void main(String[] args) {
+        System.out.println(Poo.a);
+    }
 }
 class Poo {
-	public static final String a = "hello";
-	
-	static {
-		System.out.println("¾²Ì¬´úÂë¿é");
-	}
+    public static final String a = "hello";
+    
+    static {
+        System.out.println("é™æ€ä»£ç å—");
+    }
 }
